@@ -24,12 +24,14 @@
 .about_img img{
     width: 80%;
     height: 80%;
+    animation: slideLeft 1s;
 }
 .about_context{
     width: 50%;
     /* border: 2px solid red; */
     padding: 10px;
     padding-top: 20px;
+    animation: slideRight 1s;
 }
 .about_header{
     font-size: 70px;
@@ -68,5 +70,44 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+    }
+    .about_context{
+        animation: slideButtom 1s;
+    }
+    .about_img img{
+        animation: slideButtom 1s;
+    }
+}
+/* Sliding Animation */
+/* For Smaller devices, animations are set from buttom to right;
+Wherease for larger devices, sideways */
+@keyframes slideLeft{
+    0%{
+        opacity: 00;
+        transform: translateX(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes slideRight{
+    0%{
+        opacity: 00;
+        transform: translateX(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes slideButtom{
+    0%{
+        opacity: 00;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
     }
 }
