@@ -288,7 +288,8 @@ html{
 }
 .about_part{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    /* changed 100wh --> 100% by manash in order to remove the x-overflow of div and appearance of horizontal scroll bar */
 }
 .about_main{
     /* border: 3px solid black; */
@@ -413,7 +414,8 @@ Wherease for larger devices, sideways */
 }
 @media only screen and (max-width: 600px){
     .event__Container{
-        margin: 2px;
+        margin: 2px 0;
+        /* changed from 2px --> 2px 0 by manash in order to remove the x-overflow of div and appearance of horizontal scroll bar */
         width: 100%;
         height: 100%;
         display: grid;
@@ -485,10 +487,6 @@ Wherease for larger devices, sideways */
     }
 }
 
-
-.event__Container .event__Header{
-    
-}
 .event__Container .left__Box{
     background-color: rgb(43, 226, 52);
     grid-area:left__Box ;
