@@ -405,7 +405,7 @@ Wherease for larger devices, sideways */
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 20% 80% 60%;
+    grid-template-rows: 20% 60% 60%;
     grid-template-areas: 
     "event__Header event__Header"
     "left__Box right__Box"
@@ -420,7 +420,7 @@ Wherease for larger devices, sideways */
         height: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 15% 80% 80% 60% ;
+        grid-template-rows: 15% 25% 25% 50% ;
         grid-template-areas: 
         "event__Header"
         "left__Box "
@@ -446,8 +446,8 @@ Wherease for larger devices, sideways */
     left: 50%;
     transform: translate(-50%,-50%);
     background-color:#f7f7f7;
-    height: 14rem;
-    width: 20rem;
+    height: 22rem;
+    width: 40rem;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -463,8 +463,8 @@ Wherease for larger devices, sideways */
         left: 50%;
         transform: translate(-50%,-50%);
         background-color:#f7f7f7;
-        height: 10rem;
-        width: 20rem;
+        height: 16rem;
+        width: 32rem;
       display: flex;
       text-align: center;
       justify-content: center;
@@ -476,13 +476,13 @@ Wherease for larger devices, sideways */
 }
 
 .badge_content h3{
-    font-size: 2rem;
+    font-size: 4rem;
     color: #000;
 }
 
 @media only screen and (max-width:600px){
     .badge_content h3{
-        font-size: 20px;
+        font-size: 25px;
         color: #000;
     }
 }
